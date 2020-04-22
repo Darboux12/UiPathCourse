@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Pratice_2___GenericValue" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="396,650.666666666667" sap2010:WorkflowViewState.IdRef="Pratice_2___GenericValue_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Pratice_2___GenericValue" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="396,896" sap2010:WorkflowViewState.IdRef="Pratice_2___GenericValue_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -47,7 +47,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Pratice_2" sap:VirtualizedContainerService.HintSize="376,590.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Celem programu jest badanie zachowania wartości generycznych dla dodawania. &#xD;&#xA;W tym celu należało zaimplementować dodawanie wartości numerycznych do numerycznych, tekstowych do tekstowych oraz numerycznych do tekstowych. Wyniki wydrukować na ekran.&#xD;&#xA;&#xD;&#xA;Wnioski:&#xD;&#xA;Dodawanie wartości tekstowych traktowane jest jako konkatenacja stringów.&#xD;&#xA;Dodawanie wartości numerycznych traktowane jest jako operacja arytmetyczna.&#xD;&#xA;W przypadku wartości numerczynej i tekstotwej działanie jest określane na podstawie rodzaju pierwszej zmiennej." DisplayName="Pratice_2" sap:VirtualizedContainerService.HintSize="376,836" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:GenericValue" Default="[&quot;123&quot;]" Name="A" />
       <Variable x:TypeArguments="ui:GenericValue" Default="[&quot;456&quot;]" Name="B" />
@@ -57,6 +57,7 @@
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;A + B = &quot; + (A + B)]" />
